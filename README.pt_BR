@@ -1,0 +1,68 @@
+Importante
+==========
+
+Esta é uma versão beta do sistema Nou-Rau. Nem todas as
+funcionalidades planejadas foram implementadas ainda e podem existir
+bugs, de maneira que não é recomendável utilizar por enquanto este
+sistema em ambiente de produção.
+
+Este é um trabalho em desenvolvimento, de forma que alguns recursos e
+configurações do sistema, incluindo a parte relacionado ao banco de
+dados, podem ser alterados até o lançamento da versão 1.0. Haverá,
+contudo, mecanismo de upgrade entre as versões beta e a versão final.
+
+Dito isso, o sistema já pode ser considerado razoavelmente estável e
+não devem acontecer mudanças drásticas até a versão 1.0. Ou seja, já é
+possível ter uma boa noção das facilidades que o Nou-Rau oferece.
+
+
+Informações gerais
+==================
+
+Este é o sistema de arquivamento e indexação de documentos Nou-Rau,
+desenvolvido pelo Instituto Vale do Futuro em parceria com o Centro de
+Computação da Unicamp.
+
+Ele é de uso livre e gratuito, sendo distribuído sob a licença GPL.
+
+O código fonte do Nou-Rau pode ser obtido a partir de sua homepage:
+
+  http://www.rau-tu.unicamp.br/nou-rau/
+
+O sistema foi projetado e implementado por Marcelo de G. Malheiros
+<mgm@thecore.com.br>, sob supervisão de Rubens Queiroz de Almeida
+<queiroz@ccuec.unicamp.br>, e contou com valiosas sugestões da equipe
+do Vale do Futuro, do pessoal do Centro de Computação e de muitos
+usuários do mesmo.
+
+Foram utilizadas somente ferramentas livres para o seu
+desenvolvimento, em particular o sistema operacional GNU/Linux
+(http://www.linux.org/), o editor de texto EMACS
+(http://www.gnu.org/software/emacs/), o editor gráfico GIMP
+(http://www.gimp.org/), a linguagem PHP (http://www.php.net/), o banco
+de dados POSTGRESQL (http://www.postgresql.org/), o servidor de
+páginas APACHE (http://www.apache.org/) e o mecanismo de busca HTDIG
+(http://www.htdig.org/).
+
+
+Instalação e atualização
+========================
+
+O processo de instalação e atualização do Nou-Rau está descrito no
+arquivo 'INSTALL.pt_BR'.
+
+
+Como reportar bugs
+==================
+
+Bugs devem ser reportados para <mgm@thecore.com.br>, especificando a
+versão do Nou-Rau utilizada e contendo o máximo possível de
+informações que permitam reproduzir o problema.
+
+É recomendável incluir também informações sobre a versão de cada um
+dos requisitos deste sistema, tais como PHP e POSTGRESQL.
+
+Comentários, críticas, sugestões e patches também são bem-vindos.
+
+Patches devem estar preferencialmente no chamado formato unificado,
+que corresponde à opção '-u' do programa 'diff' da GNU.

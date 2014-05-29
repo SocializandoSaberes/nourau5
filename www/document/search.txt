@@ -1,0 +1,1 @@
+SELECT nr_document.id as did, nr_document.title as title, nr_document.author as author, topic.name as name FROM nr_document, topic WHERE nr_document.topic_id=topic.id

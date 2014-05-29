@@ -1,0 +1,89 @@
+---------------- INCOMPATIBLE DATABASE CHANGES ----------------
+
+nr_document:
+  increase 'keywords' to 500
+  increase 'description' to 3000
+  increase 'info' to 3000
+  increase 'filename' to 250/500 ?
+  put 'remote' after 'status'
+
+---------------- NEEDED FEATURES BEFORE 2.0 ----------------
+
+Graphical installer/upgrader/checker
+
+Support for HTDIG 3.1.6 or fix problem with HTDIG beta
+  try --without-zlib/--enable-tests(+ make check)/--enable-bigfile
+
+Publish and edit notices
+Update database layout: topic->nr_topic users->cm_user
+Fix handling of gzipped documents
+
+Search only in one topic
+
+---------------- FEATURES AFTER 1.0 ----------------
+
+Shortcut links in e-mail notifications
+
+Cancel:
+  Criar um novo tópico: criar/cancelar
+  Login: entrar/cancelar
+  Registro: registrar/cancelar
+  Lembrar senha: lembrar/cancelar
+  Arquivar documento: arquivar/cancelar (passo 1 e passo 2)
+
+Shortcuts em gerenciar documentos: ícones para aprovar/rejeitar
+
+Better fallback for uploading
+
+---------------- FUTURE ENHANCEMENTS ----------------
+
+Hidden/blocked documents
+Multiple files?
+
+Remote files
+
+Auto-focus for all forms
+
+Show statistics about system:
+- disk usage of documents and search database
+- free disk space (and warn admin when it reaches 10%)
+- number of documents stored
+- number of downloads and accesses
+
+---------------- SECURITY ----------------
+
+Support tighter security under PostgreSQL 7.1/7.2: user access and
+GRANTs.
+
+Support MD5 checksums.
+
+---------------- INSTALLATION ----------------
+
+Better check of directories structure and files.
+
+Force installation of HTDIG first.
+
+Add default search database so first reconstruction is not necessary.
+
+Add checking of installation.
+
+---------------- CONVERTERS ----------------
+
+ANTIWORD 0.33: test new stdin support
+
+PSTOTEXT: too slow, try other alternative
+
+Add support for other document formats:
+
+- old binary StarOffice formats
+- newer XML-based OpenOffice/StarOffice formats
+- KDE/KOffice formats
+- WordPerfect
+- GNOME/Abiword/Gnumeric formats
+- compressed versions of known formats
+
+---------------- LIMITATIONS ----------------
+
+Some limitations were reported when dealing with Apache+SSL and IE,
+not much details known as what works and what doesn't. Netscape works
+fine, though.

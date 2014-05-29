@@ -1,0 +1,21 @@
+body, td, .text {
+  color: #000000;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 12px;
+}
+h2 { font-size: 16px }
+
+a:link, a:visited { color: #0000ff }
+a:hover           { color: #8080ff }
+
+.emphasis { color: #ff0000 }
+.inverse  { color: #ffffff }
+
+body    { background-color: #ffffff; }
+.border { background-color: #000000 }
+.base   { background-color: #ffffff }
+.even   { background-color: #f8f8f8 }
+.odd    { background-color: #eeeeee }
+.hilite { background-color: #ffff00 }
+.title  { background-color: #55ee88 }
+.footer { background-color: #00b844 }

@@ -1,0 +1,269 @@
+Tue Jul 13 10:13:00 2004 Claudio Dia <euvi_gnomo@yahoo.com.br>
+	* www/document/put.php: now is possible update the file in a record
+	* www/document/put.php: new system to approve documents
+	* www/document/index.php: show time estimated for download of documents 
+	* install.php: updated code for new versions of PHP
+	* schema_nr.sql: added new columns(new_filename, new_size, new_format_id) 
+	  for update of documents
+	* schema_nr.sql: added new status for documents
+	* pot folder: pot files updated	
+
+Mon Jul  7 11:37:43 2003  Marcelo de G. Malheiros  <mgm@thecore.com.br>
+
+	* www/document/put.php: added missing database translation
+
+Sun Jul  6 21:27:38 2003  Marcelo de G. Malheiros  <mgm@thecore.com.br>
+
+	* schema.sql: added quotes to function declaration for compatibility
+	* www/user/list.php: added missing database translation
+	* www/cron/all.php: force change to script directory
+	* www/include/start.php: simplified script location handling
+	* INSTALL.pt_BR, Makefile, share/nourau.conf, www/config_d.php:
+	  moved packages to /usr/local
+
+Tue May 27 22:15:58 2003  Marcelo de G. Malheiros  <mgm@thecore.com.br>
+
+	* www/document/index.php, www/document/list.php,
+	  www/topic/edit.php, www/user/index.php: do database translation
+
+Tue Feb 25 21:45:15 2003  Marcelo de G. Malheiros  <mgm@thecore.com.br>
+
+	* reset.sql, reset_nr.sql, po/Makefile, po/nou-rau.pot,
+	  po/pt_BR.po: added i18n catalog entries to database messages
+	* schema.sql: added dummy '_' function
+	* reset.en_US.sql, reset.pt_BR.sql, reset_nr.en_US.sql,
+	  reset_nr.pt_BR.sql: removed
+	* share/convert.pl: fixed error with remote documents
+	* share/mime.magic: updated
+	* www/include/format_d.php, www/include/page.php,
+	  www/include/page_d.php:
+	* www/user/index.php: message fix
+	* all: minor menu changes
+
+Fri Jan 17 01:11:34 2003  Marcelo Malheiros  <mgm@thecore.com.br>
+
+	* INSTALL.pt_BR, NOTES, share/convert.pl: added support
+	  for latest version of XPDF
+	* www/document/edit.php: update document in search index only
+	  if it is already archived
+
+Thu Jan 16 16:29:35 2003  Marcelo Malheiros  <mgm@thecore.com.br>
+
+	* www/document/results.php: quick fix for typo
+
+Wed Jan 15 22:49:21 2003  Marcelo Malheiros  <mgm@thecore.com.br>
+
+	* www/index.php, www/include/page.php: added main page entry to
+	  menu
+	* INSTALL.pt_BR: added part about 'post_max_size'
+	* www/document/list.php: fixed queries to handle topics with
+	  incoming documents
+	* www/include/htdig.php: clipped long error messages
+
+Tue Jan 14 01:25:51 2003  Marcelo Malheiros  <mgm@thecore.com.br>
+
+	* all: using new 'xgettext' support for PHP, improved templated
+	  messages
+	* www/include/htdig.php: added feedback for long-running commands
+
+Fri Nov 29 11:01:56 2002  Marcelo Malheiros  <mgm@thecore.com.br>
+
+	* www/document/list.php: enabled links in topic description
+
+Fri Oct 18 18:11:33 2002  Marcelo Malheiros  <mgm@thecore.com.br>
+
+	* install.php: removed extra parenthesis (reported by José Ricardo
+	  Ziviani)
+
+Tue Oct 15 00:15:13 2002  Marcelo Malheiros  <mgm@thecore.com.br>
+
+	* www/document/list.php: replaced OUTER JOIN with UNION/NOT IN
+	  kludge to support POSGRESQL 7.0
+
+Mon Oct 14 23:23:28 2002  Marcelo Malheiros  <mgm@thecore.com.br>
+
+	* www/index.php: show document size in megabytes
+	* www/document/list.php: count only archived documents in each
+	  topic; show document count only if non-zero
+	* all: minor layout fixes
+
+Mon Oct 14 19:19:49 2002  Marcelo Malheiros  <mgm@thecore.com.br>
+
+	* www/document/list.php, www/document/results.php,
+	  www/include/format_d.php: added paging to document list
+	* www/config.php, www/include/page.php: replaced strip image with
+	  pure text; added background image option to banner
+	* www/cron/all.php, www/cron/clean.php: added cleanup of incoming
+	  documents
+	* www/index.php: calculate totals for archived documents only
+
+Sun Oct 13 23:18:09 2002  Marcelo Malheiros  <mgm@thecore.com.br>
+
+	* all: limited topic names and document titles in tables; moved
+	  approval and search engine actions to new 'manage' section;
+	  topic creation and edition now can be done from the document
+	  browsing; reworked layout so it fits better in 800x600 screens
+
+Sat Oct 12 23:38:41 2002  Marcelo Malheiros  <mgm@thecore.com.br>
+
+	* all: changed all color to CSS styles, added automatic
+	  alternating row colors to tables
+	* www/config.css: added
+	* www/index.php: put totals inside a box
+	* www/document/list.php: added document totals for each topic;
+	  removed default mode and sort values from URL
+	* www/include/html.php, www/user/list.php: fix misalignment in
+	  table columns
+
+Fri Oct 11 11:44:14 2002  Marcelo Malheiros  <mgm@thecore.com.br>
+
+	* www/index.php: added document totals
+
+Mon Oct  7 02:07:42 2002  Marcelo Malheiros  <mgm@thecore.com.br>
+
+	* www/index.php: www/document/stats.php: added downloads, visits
+	  and last update statistics
+	* share/convert.pl, www/include/htdig.php: enhanced error messages
+        * Makefile, www/config.php: default user changed to 'www'
+        * reset.*.sql, www/config.php: default e-mail changed to
+	  'nou-rau@localhost'
+        * INSTALL.pt_BR: updated APACHE and POSGRESQL instructions, APACHE
+	  should force proper 'magic quotes' and 'register globals' modes
+
+Thu Sep 12 02:40:58 2002  Marcelo Malheiros  <mgm@thecore.com.br>
+
+	* README.pt_BR, INSTALL.pt_BR: updated
+	* Makefile, www/config.php, install.php: cleaned up installation,
+	  which now defaults to user 'nobody'
+	* grant.sql, grant_nr.sql: added
+	* dump-pg.pl: removed
+	* www/include/start.php, www/user/login.php: only start a session
+	  if the right cookie is defined
+	* www/user/login.php: password should not be preserved in form
+
+Fri Jun 28 17:55:31 2002  Marcelo Malheiros  <mgm@thecore.com.br>
+
+	* www/document/list.php: fixed breaking in topic list
+	* www/document/list.php, www/include/format_t.php: enabled
+	  hyperlinks inside topic descriptions
+
+Wed Jun 19 18:57:26 2002  Marcelo Malheiros  <mgm@valedofuturo.unicamp.br>
+
+	* schema.sql, schema_nr.sql: removed quotes around sequence
+	  minimum values
+
+Sat Jun 15 19:12:35 2002  Marcelo Malheiros  <mgm@valedofuturo.unicamp.br>
+
+	* www/include/htdig.php, www/user/remind.php: fixes to logging
+
+Fri Jun 14 16:18:39 2002  Marcelo Malheiros  <mgm@valedofuturo.unicamp.br>
+
+	* all: removed reference to 'start_d.php', added 'defs.php' and
+	  'defs_d.php'
+	* www/document/index.php, www/include/page.php: also added TITLE
+	  values to images
+	* www/include/htdig.php: improved the output of HTDIG indexing and
+	  statistics
+
+Thu Jun 13 18:38:59 2002  Marcelo Malheiros  <mgm@valedofuturo.unicamp.br>
+
+	* www/document/edit.php, www/document/index.php,
+	  www/document/list.php: better handling of remote files
+
+Thu Jun 13 13:50:39 2002  Marcelo Malheiros  <mgm@valedofuturo.unicamp.br>
+
+	* www/include/db.php: made fatal messages more detailed
+	* www/user/list.php: administrator should not be removed
+
+Wed Jun 12 18:16:42 2002  Marcelo Malheiros  <mgm@valedofuturo.unicamp.br>
+
+	* CHANGES.configuration, CHANGES.database: added
+	* schema_nr.sql: replaced 'version' by 'code', 'slot' by 'visits'
+	  and added 'remote' in documents table; new version 1.0.1
+	* www/config_d.php: added new configuration '$cfg_tool_htstat'
+	* www/index.php, www/document/*, www/include/htdig.php: added
+	  code support, tracking of visits and remote file handling;
+	  enabled file name editing for archived documents
+	* www/document/index.php, www/include/page.php: added ALT values
+	  to images
+	* www/include/htdig.php, www/topic/action.php, www/topic/list.php:
+	  added action to show HTDIG statistics
+
+Wed May 29 1:46:20 2002  Marcelo Malheiros  <mgm@valedofuturo.unicamp.br>
+
+	* all: added validation to integer parameters, added quotes
+	  around integer values in SQL commands (suggested by Roberto
+	  Bertó)
+
+Wed May 29 0:22:10 2002  Marcelo Malheiros  <mgm@valedofuturo.unicamp.br>
+
+	* www/include/format_d.php, www/include/page.php: added search box
+	  to menu
+
+Thu May 16 16:54:06 2002  Marcelo Malheiros  <mgm@valedofuturo.unicamp.br>
+
+	* www/document/results.php, www/include/format_d.php: made search
+	  parameters optional
+
+Thu May  9 10:41:27 2002  Marcelo Malheiros  <mgm@valedofuturo.unicamp.br>
+
+	* www/include/start.php, www/include/start_d.php: minor update
+	  to the include system for supporting offline scripts
+
+Wed May  8 11:58:34 2002  Marcelo Malheiros  <mgm@valedofuturo.unicamp.br>
+
+	* all: reworked include system to also work with symlinks
+
+Tue May  7 18:55:01 2002  Marcelo Malheiros  <mgm@valedofuturo.unicamp.br>
+
+	* www/images: removed 'banner_rt_en.gif' and 'banner_rt_pt.gif'
+	* www/include/page.php: added link to homepage to 'about'
+	* www/document/search.php: added missing <p>
+
+Tue Apr 30 23:29:32 2002  Marcelo Malheiros  <mgm@valedofuturo.unicamp.br>
+
+	* www/include/page.php: do not show register link in closed mode
+	* www/config.php, www/include/page.php: removed image on top right
+	* www/include/start.php: explicitly defined LC_ALL environment
+	  variable
+	* INSTALL.pt_BR, README.pt_BR, reset.pt_BR.sql,
+	  reset_nr.pt_BR.sql: renamed
+	* reset.en_US.sql, reset_nr.en_US.sql: added
+	* Makefile, install.php: added language option to database
+	  installation
+
+Tue Apr  2 19:41:07 2002  Marcelo Malheiros  <mgm@valedofuturo.unicamp.br>
+
+	* www/document/list.php: fixed bug in back link
+
+Tue Mar 12 20:57:39 2002  Marcelo Malheiros  <mgm@valedofuturo.unicamp.br>
+
+	* www/images/icon_*: renamed format icons
+	* www/document/list.php, www/document/put.php, www/topic/edit.php,
+	  www/topic/index.php: enabled topics with no categories
+	* INSTALL.pt: added note about 'upload_max_filesize'
+	* INSTALL.pt, NOTES, www/config_d.php: required newest
+	  version of XPDF
+
+Thu Feb 28 16:25:37 2002  Marcelo Malheiros  <mgm@valedofuturo.unicamp.br>
+
+	* www/document/put.php, www/include/html.php: added 'enctype' to
+	  'html_form_begin'
+
+Tue Feb 26 17:16:25 2002  Marcelo Malheiros  <mgm@valedofuturo.unicamp.br>
+
+	* www/include/gettext.php: force $cfg_language to default value
+	* AUTHORS, Makefile, install.php, www/config.php,
+	  www/include/db.php: added optional password for database (based
+	  on patch by Carlos Romel)
+
+Tue Jan 29 17:52:54 2002  Marcelo Malheiros  <mgm@valedofuturo.unicamp.br>
+
+	* www/config_d.php, www/include/htdig.php: forced read and write
+	  permissions to all on search index files
+	* www/document/put.php: worked around a bug in Mozilla 0.9.1 that
+	  prevents file uploads
+
+Fri Jan 25 02:18:59 2002  Marcelo Malheiros  <mgm@valedofuturo.unicamp.br>
+
+	* ChangeLog: started

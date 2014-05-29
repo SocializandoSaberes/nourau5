@@ -1,0 +1,121 @@
+---------------- CODING CONVENTIONS ----------------
+
+- Use <?php ... ?>
+- Use 'echo' for all HTML output, with heredoc for more than one line
+- Use C++ style comments instead of '#'
+- Only use brackets for statements with more than one line
+
+- All database ids start at 1
+- All date types are 'timestamp'
+- Login names are in lowercase
+
+- All URLs (form action, redirect, refresh, link) must be absolute
+- HTML tags and attributes in lowercase
+- Double quotes on attribute values
+- Hexadecimal numbers in lowercase
+- No special character entry for double quotes in HTML
+
+---------------- REQUIREMENTS ----------------
+
+APACHE      1.3.26           [ http://www.apache.org/ ]
+POSTGRESQL  7.2.1            [ http://www.postgresql.org/ ]
+PHP         4.2.2            [ http://www.php.net/ ]
+FILE        3.37             [ ftp://ftp.astron.com/pub/file/ ]
+HTDIG       3.2.0b4-20020818   http://www.htdig.org/files/snapshots/
+PERL        5.6.1            [ http://www.perl.org/ ]
+
+ANTIWORD  0.33  http://www.winfield.demon.nl/
+DVI2TTY   pl3   http://www.ctan.org/tex-archive/dviware/dvi2tty/
+PSTOTEXT  1.8g  http://www.research.compaq.com/SRC/virtualpaper/pstotext.html
+                depends on GHOSTSCRIPT
+RECODE    3.6   ftp://ftp.gnu.org/pub/gnu/recode/
+XLHTML    0.5.1 http://chicago.sourceforge.net/xlhtml/
+XPDF      2.01  http://www.foolabs.com/xpdf/
+
+---------------- COMPILE ----------------
+
+export CFLAGS="-O -pipe"
+export CXXFLAGS="-O -pipe"
+./configure --prefix=/home/mgm/packages/yaz-2.0.2
+./configure --prefix=/home/mgm/packages/php-4.3.2 --with-gettext --with-pgsql --with-apxs
+--with-gd --with-jpeg-dir=/usr/lib --with-png-dir=/usr/lib --with-zlib
+--with-yaz
+
+---------------- CONVERTERS ----------------
+
+[text/html, text/plain, text/sgml, text/wml, text/xml, application/rtf]
+  internal
+
+[application/msword]
+  ANTIWORD
+
+[application/pdf]
+  PDFTOTEXT, part of XPDF
+
+[application/postscript]
+  PSTOTEXT
+
+[application/vnd.ms-excel]
+  XLHTML
+
+[application/vnd.ms-powerpoint]
+  PPTHTML, part of XLHTML
+
+[application/x-dvi]
+  DVI2TTY
+
+[application/x-latex, application/x-tex]
+  RECODE
+
+---------------- XPDF PATCH ----------------
+
+--- xpdf-2.01/xpdf/pdftotext.cc.orig  Thu Dec  5 21:44:33 2002
++++ xpdf-2.01/xpdf/pdftotext.cc       Thu Dec  5 21:44:33 2002
+@@ -155,7 +155,7 @@
+   }
+
+   // check for copy permission
+-  if (!doc->okToCopy()) {
++  if (0) {
+     error(-1, "Copying of text from this document is not allowed.");
+     exitCode = 3;
+     goto err2;
+
+---------------- LOGO FONTS ----------------
+
+Nou-Rau (Fritz-Quadrata bold 48 pt)
+Rau-Tu x2 (Cooper heavy 56 pt, Engraver light 28 pt)
+Strip (Helvetica bold 12 pt)
+
+---------------- MAGIC FILE FOR MIME TYPES ----------------
+
+From KIO library, part of KDE:
+  http://webcvs.kde.org/cgi-bin/cvsweb.cgi/kdelibs/kio/magic
+
+Changed:
+  text/rtf -> application/rtf
+  image/x-xpm -> image/x-xpixmap
+  commented last python entry; too long
+
+GNOME equivalent:
+  http://cvs.gnome.org/lxr/source/gnome-vfs/data/mime/gnome-vfs-mime-magic
+
+APACHE equivalent:
+  http://cvs.apache.org/viewcvs.cgi/apache-1.3/conf/magic
+
+---------------- DOCUMENT SYSTEMS ----------------
+
+SDMS http://sdms.cafuego.net/
+
+---------------- VERSION CONTROL ----------------
+
+ARCH        http://www.regexps.com/
+PRCS        http://prcs.sourceforge.net/
+SUBVERSION  http://subversion.tigris.org/
+
+---------------- HOW TO MERGE BRANCHES ----------------
+
+cd main
+cvs tag main-2
+cd ../branch
+cvs update -j main-1 -j main-2

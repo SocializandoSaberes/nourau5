@@ -1,0 +1,481 @@
+Dependências obrigatórias
+=========================
+
+Estes são os pacotes dos quais o Nou-Rau depende:
+
+- Servidor APACHE, qualquer versão da série 1.3.x ou mais recente.
+
+  Versões testadas: 1.3.12, 1.3.14, 1.3.22, 1.3.26, 2.0.48
+
+- Servidor POSTGRESQL, qualquer versão da série 7.x.x ou mais
+  recente.
+
+  Versões testadas: 7.0.2, 7.0.3, 7.1.2, 7.1.3, 7.2, 7.2.1, 7.3, 7.4
+
+- Linguagem PHP, qualquer versão da série 4.x.x.
+
+  Versões testadas: 4.0.3pl1, 4.0.4, 4.0.5, 4.0.6, 4.1.1, 4.1.2,
+                    4.2.2, 4.2.3, 4.3.2, 4.3.4
+
+- Utilitário FILE, versão 3.32 ou mais recente.
+
+  Versões testadas: 3.32, 3.37
+
+- Mecanismo de busca HTDIG, versão 3.2.0b4-011302 ou mais recente.
+
+  Versões testadas: 3.2.0b4-011302, 3.2.0b4-20020818
+
+- Linguagem PERL, qualquer versão da série 5.6.x ou mais recente.
+
+  Versões testadas: 5.6.0, 5.6.1
+
+Destes pacotes, somente o HTDIG precisa ser instalado manualmente,
+pois a versão que acompanha a maioria das distribuições de Linux é
+antiga (série 3.1.x). Os demais podem ser instalados diretamente a
+partir de sua distribuição. Uma versão adequada do HTDIG pode ser
+obtida diretamente da homepage do Nou-Rau:
+
+  http://www.rau-tu.unicamp.br/nou-rau/
+
+
+Dependências recomendadas
+=========================
+
+Estes são pacotes que o Nou-Rau utiliza para indexar o conteúdo de
+documentos em diversos formatos. É recomendável instalar todos eles,
+porém você pode optar por instalar somente os conversores para os
+tipos de arquivos que você pretende armazenar.
+
+- Conversor ANTIWORD, versão 0.33 ou mais recente.
+
+  Versões testadas: 0.33
+  Formato de documentos: MS Word
+
+- Conversor DVI2TTY, versão pl3 ou mais recente.
+
+  Versões testadas: pl3
+  Formato de documentos: DVI
+
+- Conversor PSTOTEXT, versão 1.8g ou mais recente. Depende do pacote
+  GHOSTSCRIPT.
+
+  Versões testadas: 1.8g
+  Formato de documentos: PostScript
+
+- Conversor RECODE, versão 3.6 ou mais recente.
+
+  Versões testadas: 3.6
+  Formato de documentos: LaTeX, TeX
+
+- Conversor XLHTML, versão 0.4 ou mais recente.
+
+  Versões testadas: 0.4, 0.5, 0.5.1
+  Formato de documentos: MS Excel, MS PowerPoint
+
+- Conversor XPDF, versão 2.01 ou mais recente.
+
+  Versões testadas: 2.01, 2.02
+  Formato de documentos: PDF
+
+Destes pacotes, somente o GHOSTSCRIPT costuma acompanhar a maioria das
+distribuições do Linux. Os demais precisam ser compilados a partir dos
+fontes. Versões adequadas dos mesmos podem ser obtidas diretamente da
+homepage do Nou-Rau:
+
+  http://www.rau-tu.unicamp.br/nou-rau/
+
+
+Atualização
+===========
+
+Se você já tem uma versão anterior deste sistema instalada, pule
+diretamente para o Passo 9, abaixo.
+
+
+Instalação
+==========
+
+Todos os pacotes que precisam ser compilados manualmente são
+instalados a partir do diretório '/usr/local' por simplicidade. É
+recomendável que você siga este procedimento, pois os arquivos de
+configuração do Nou-Rau já vêm prontos para esta organização.
+
+Contudo você pode mudar a localização dos mesmos se desejar,
+tipicamente mudando o path indicado na diretiva '--prefix=' e
+alterando os arquivos de configuração de acordo. A única ressalva é o
+pacote ANTIWORD, conforme descrito no Passo 5.
+
+Observe que para compilar tais pacotes você precisa dispor de
+ferramentas de desenvolvimento como MAKE, GCC e G++, além de pacotes
+específicos como 'kernel-headers' e 'glibc-devel'. Consulte a
+documentação de sua distribuição para saber quais os pacotes
+necessários para desenvolvimento nas linguagens C e C++.
+
+
+Passo 1: Instalar o APACHE
+--------------------------
+
+O APACHE pode ser instalado normalmente (a partir dos fontes ou via
+pacotes pré-compilados), porém é importante que o suporte para módulos
+esteja presente para utilizar o PHP.
+
+Se você for compilar o PHP, o pacote de desenvolvimento do APACHE deve
+também ser instalado (APXS).
+
+
+Passo 2: Instalar o POSTGRESQL
+------------------------------
+
+O servidor de bancos de dados pode ser instalado normalmente (a partir
+dos fontes ou via pacotes pré-compilados).
+
+Se você for compilar o PHP, o pacote de desenvolvimento do POSTGRESQL
+deve também ser instalado (contendo os includes).
+
+
+Passo 3: Instalar o PHP
+-----------------------
+
+O PHP precisa ser instalado e configurado para que tenha suporte para
+o banco de dados POSTGRESQL e que rode como um módulo do APACHE.
+Também é necessária uma versão stand-alone para ser rodada
+regularmente.
+
+Se você utiliza pacotes pré-compilados, pode ser suficiente instalar o
+pacote principal do PHP e um pacote adicional com o suporte para o
+POSTGRESQL, além de um módulo para o APACHE.
+
+Se você for compilar o PHP, você vai precisar ao menos definir as
+flags '--with-apxs2', para gerar um módulo do APACHE, e '--with-pgsql',
+para ter suporte para o POSTGRESQL.
+
+Será necessário compilar novamente o PHP, agora sem '--with-apxs2',
+para gerar um executável stand-alone, chamado 'php'.
+
+
+Passo 4: Instalar os demais pacotes obrigatórios
+------------------------------------------------
+
+FILE
+
+Instale o pacote FILE a partir de sua distribuição Linux.
+
+
+HTDIG
+
+Extraia os fontes, entre no novo diretório e compile o pacote com os
+seguintes comandos:
+
+  ./configure --prefix=/usr/local/htdig --enable-bigfile
+  make
+  make install
+
+Download: http://www.htdig.org/files/snapshots/
+
+
+PERL
+
+Instale o pacote PERL a partir de sua distribuição Linux.
+
+
+Passo 5: Instalar os conversores
+--------------------------------
+
+ANTIWORD
+
+Extraia os fontes, entre no novo diretório e compile o pacote com as
+seguintes linhas (só funciona para a versão 0.33):
+
+  BDIR=/usr/local/antiword/bin
+  RDIR=/usr/local/antiword/share
+  perl -pi -e "s|/usr/share/antiword|$RDIR|" antiword.h
+  make LOCAL_INSTALL_DIR=$BDIR LOCAL_RESOURCES_DIR=$RDIR install
+
+É conveniente alterar a permissão dos arquivos instalados para serem
+acessados por todos, com:
+
+  chmod 755 /usr/local/antiword/bin/*
+  chmod 644 /usr/local/antiword/share/*
+
+Diferentemente dos outros conversores, o ANTIWORD instala seus
+programas no diretório especificado pela variável BDIR (definida
+acima) e procura por seus arquivos de configuração em RDIR. Se você
+quiser fazer a instalação em outro lugar, basta repetir o processo
+descrito acima, modificando a definição de BDIR e RDIR (note que o
+arquivo 'antiword.h' é alterado, o que exige que os fontes sejam
+extraídos novamente neste caso).
+
+Download: http://www.winfield.demon.nl/
+
+
+DVI2TTY
+
+Extraia os fontes, entre no novo diretório e compile o pacote
+normalmente (com 'make'). Crie o diretório '/usr/local/dvi2tty/bin' e
+copie para ele o binário 'dvi2tty' que acabou de ser criado.
+
+Download: http://www.ctan.org/tex-archive/dviware/dvi2tty/
+
+
+PSTOTEXT
+
+Instale o pacote GHOSTSCRIPT a partir de sua distribuição Linux. Em
+seguida extraia os fontes, entre no novo diretório e compile o pacote
+normalmente (com 'make'). Crie o diretório '/usr/local/pstotext/bin' e
+copie para ele o binário 'pstotext' que acabou de ser criado.
+
+Download: http://www.research.compaq.com/SRC/virtualpaper/pstotext.html
+
+
+RECODE
+
+Extraia os fontes, entre no novo diretório e compile o pacote com os
+seguintes comandos:
+
+  ./configure --prefix=/usr/local/recode
+  make
+  make install
+
+Download: ftp://ftp.gnu.org/pub/gnu/recode/
+
+
+XLHTML
+
+Extraia os fontes, entre no novo diretório e compile o pacote com os
+seguintes comandos:
+
+  ./configure --prefix=/usr/local/xlhtml
+  make
+  make install
+
+Download: http://chicago.sourceforge.net/xlhtml/
+
+
+XPDF
+
+Extraia os fontes, entre no novo diretório e compile o pacote com os
+seguintes comandos:
+
+  ./configure --prefix=/usr/local/xpdf --without-x
+  make
+  make install
+
+Download: http://www.foolabs.com/xpdf/
+
+
+Passo 6: Configurar o APACHE
+----------------------------
+
+Pode ser necessário configurar o APACHE para rodar o PHP como um
+módulo, e para reconhecer a extensão '.php'.
+
+A documentação do PHP descreve este processo em detalhes, mas de
+maneira resumida você vai precisar adicionar as seguintes linhas nas
+seções apropriadas de 'httpd.conf':
+
+  LoadModule php4_module modules/libphp4.so
+  AddModule mod_php4.c
+  AddType application/x-httpd-php .php
+
+Adicionalmente é preciso incluir 'index.php' como uma página válida de
+índice, alterando o default do APACHE para:
+
+  DirectoryIndex index.php index.html
+
+Também é importante verificar se o APACHE está sendo corretamente
+inicializado em tempo de boot. Use 'chkconfig', 'ntsysv' ou ainda
+'linuxconf'.
+
+Finalmente, é preciso fazer com que o APACHE habilite o funcionamento
+do PHP no diretório aonde estará o Nou-Rau, além de definir os modos
+corretos de operação do mesmo. Para isso você deve inserir as
+seguintes linhas no final do arquivo de configuração, modificando o
+caminho após a diretiva 'Directory' para o diretório onde o Nou-Rau
+será efetivamente instalado (em algumas distribuições poderia ser
+'/home/httpd/html/nou-rau'):
+
+  <Directory /var/www/default/nou-rau>
+    php_flag engine           on
+    php_flag magic_quotes_gpc on
+    php_flag register_globals on
+  </Directory>
+
+Finalmente é importante anotar o usuário do sistema sob o qual roda o
+APACHE, especificado pela diretiva 'User', pois esse dado pode ser
+necessário nos passos seguintes.
+
+
+Passo 7: Configurar o POSTGRESQL
+--------------------------------
+
+Após a instalação do POSTGRESQL, é conveniente criar uma conta de
+acesso e uma base de dados. Isso deve ser feito não como 'root', mas
+como o usuário default 'postgres'.
+
+O POSTGRESQL pode ser configurado para usar diversos modos de
+autenticação, desde o mais simples ('trust'), em que o acesso é
+permitido a qualquer conta de acesso local, até o que depende de
+senhas ('password', 'md5', etc.), uma para cada conta de acesso. A
+partir da versão 7.2, o POSTGRESQL aceita outro mecanismo, baseado no
+serviço 'ident', que exige que cada conta corresponda a um usuário
+local existente no sistema, e somente este usuário terá permissão de
+se conectar com o banco de dados.
+
+Cada distribuição de Linux traz o POSTGRESQL pré-configurado de uma
+maneira em particular. Você pode observar (e eventualmente alterar) a
+configuração utilizada no arquivo 'pg_hba.conf', que normalmente fica
+em '/var/lib/pgsql/data/'.
+
+Quando a configuração é 'trust', qualquer conta do POSTGRESQL pode ser
+criada para o Nou-Rau. Quando a configuração é 'ident', deve ser
+criada uma conta que coincida com o usuário utilizado pelo APACHE, que
+normalmente é 'www' ou 'nobody'. Quando a configuração depender de
+senha, esta deve ser especificada juntamente com a conta de acesso
+utilizada.
+
+A seguir um exmplo de configuração do arquivo 'pg_hba.conf' do POSTGRESQL
+para funcionamento com o Nou-Rau:
+
+# TYPE  DATABASE    USER        IP-ADDRESS        IP-MASK           METHOD
+local    all         all                                             trust
+host     all         all         127.0.0.1         255.255.255.255   trust
+
+Por default o Nou-Rau vem configurado para uma conta de acesso 'www',
+sem senha. Caso seja necessário, altere esta conta para outro nome
+adequado e/ou forneça uma senha.
+
+O POSTGRESQL deve estar configurado para aceitar conexões via TCP/IP, isso 
+pode ser feito habilitando opção 'tcpip_socket' e deixa-la setada com o valor
+"true" no arquivo de configuração do POSTGRESQL (postgresql.conf). Após essa 
+modificação no arquivo de configuração é necessário reiniciar o POSTGRESQL.
+
+Nas linhas abaixo uma conta 'www' do POSTGRESQL é criada, juntamente
+com um banco de dados chamado 'rautu':
+
+  # su postgres
+  $ createuser -A -D www
+  $ createdb nourau
+
+Finalmente é importante verificar se o POSTGRESQL está sendo
+corretamente inicializado em tempo de 'boot'. Use 'chkconfig',
+'ntsysv' ou ainda 'linuxconf'.
+
+
+Passo 8: Configurar o PHP
+-------------------------
+
+A princípio não é necessário configurar o PHP, mas pequenos ajustes
+podem ser recomendáveis nas situações abaixo.
+
+Estas configurações estão no arquivo 'php.ini', que tipicamente fica
+em '/etc/php4/apache/' ou em '/usr/local/lib/'.
+
+É recomendável alterar duas opções, que indicam o tamanho máximo de
+dados enviados a partir do cliente para o servidor. Isso afeta
+diretamente o tamanho dos arquivos que podem ser submetidos, limite
+que por default é de apenas 2 Mb. Sugere-se aumentar esse limite para
+acomodar documentos maiores, como por exemplo:
+
+  post_max_size       = 20M
+  upload_max_filesize = 20M
+
+Outra opção que pode ser conveniente alterar é a que limita o tempo
+máximo que um usuário pode ficar dentro do sistema. A alteração das
+duas opções a seguir, definidas em [Session], permite que o usuário
+feche seu browser e que ao abrí-lo novamente continue logado no
+sistema:
+
+  session.cookie_lifetime = 86400
+  session.gc_maxlifetime  = 86400
+
+Estas opções estabelecem que uma sessão dura no máximo 24 horas (ao
+invés do default de 24 minutos). Após esse tempo o usuário é forçado a
+entrar novamente sua identificação e senha.
+
+
+Passo 9: Instalar o Nou-Rau
+---------------------------
+
+Edite o arquivo 'Makefile' que veio junto com os fontes do Nou-Rau e
+mude a definição da variável 'BASE' para o nome da base de dados
+criada no Passo 5 (ou da base já em uso), se for diferente de
+'nourau'. Também altere 'USER' para o nome da conta de acesso criada
+anteriormente (ou da conta já cadastrada), caso seja diferente de
+'www'.
+
+Se desejado, altere o diretório onde os arquivos de dados do Nou-Rau
+serão instalados ('NRDIR'), que por default é '/home/nou-rau'. Se
+necessário, altere também a localização do pacote HTDIG, segundo o que
+foi feito no Passo 4.
+
+Execute então 'make install', no mesmo diretório em que se encontra o
+arquivo 'Makefile' como usuário 'root':
+
+  # su
+  $ make install
+
+Caso esta seja a primeira instalação, as tabelas e dados iniciais
+serão criados no POSTGRESQL. Caso já existam dados no banco, este
+comando fará um backup do conteúdo atual (no diretório corrente, em um
+arquivo com extensão '.sql') e atualizará as tabelas se necessário.
+
+Note que para este 'make' funcionar é preciso que os programas 'psql'
+e 'pg_dump' estejam disponíveis. Em algumas distribuições esses
+programas são distribuído separadamente do servidor de banco de dados,
+eventualmente em um pacote chamado 'postgresql-clients' ou algo
+parecido. Também é necessária a versão em linha de comando do PHP,
+chamada simplesmente 'php'.
+
+Caso algum destes programas não estiver no path, altere as definições
+no início do 'Makefile' e indique o caminho completo de cada um deles.
+
+Então copie todo o conteúdo do diretório 'www' do pacote do Nou-Rau
+para o diretório dentro da hierarquia pública do APACHE configurado no
+Passo 4 (por default '/var/www/default/nou-rau'). É fundamental que
+esse diretório esteja visível através do servidor APACHE (no exemplo
+anterior, estaria disponível em 'http://127.0.0.1/nou-rau/').
+
+Se você estiver somente atualizando o sistema, tenha o cuidado de
+manter os arquivos 'config.php' e 'config_d.php' anteriores. Desta
+forma não será preciso fazer o passo seguinte.
+
+
+Passo 10: Configurar o Nou-Rau
+------------------------------
+
+Edite o arquivo 'config.php' e altere se necessário as variáveis nele
+definidas. Se forem diferentes do default, especifique a base de dados
+($cfg_base) e o nome da conta de acesso ao POSTGRESQL ($cfg_user).
+
+Em especial é necessário alterar a variável '$cfg_site' para apontar
+para a URL em que foi instalado o Rau-Tu. Altere também o endereço
+para contato definido em '$cfg_webmaster'.
+
+Apenas um usuário do Nou-Rau é criado por default, 'admin', com senha
+'admin'. Resta então acessar o sistema através do endereço principal,
+entrar como administrador, alterar esta senha inicial e criar novos
+tópicos e usuários.
+
+Se você instalou os arquivos de dados do Nou-Rau em um local que não
+'/home/nou-rau', você vai precisar alterar a variável '$cfg_dir_base'
+no arquivo 'config_d.php'. O mesmo vale para a localização do FILE, do
+HTDIG e dos demais pacotes instalados no Passo 5.
+
+É também recomendável colocar no crontab do mesmo usuário com que roda
+o APACHE a execução do script 'cron/rundig.php', para que o conteúdo
+de documentos novos seja atualizado regularmente no índice de
+busca.
+
+Para tanto a versão stand-alone do PHP deve ser chamada com a opção
+'-f'. Por exemplo, uma possível entrada para o crontab do usuário
+'www' seria:
+
+  30 * * * *  /usr/bin/php -f /home/httpd/html/nou-rau/cron/rundig.php
+
+
+Resolução de problemas
+======================
+
+Muitos dos problemas que podem surgir durante a operação do sistema
+podem ser resolvidos com ajustes na configuração do PHP, como descrito
+no Passo 8. Verifique também os Passos 9 e 10 acima.

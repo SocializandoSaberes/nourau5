@@ -1,0 +1,6 @@
+cp www/index.php /home/httpd/html/rau-tu/nou-rau/MAIN
+mkdir /home/httpd/html/rau-tu/nou-rau/MAIN/notice
+cp www/notice/*.php /home/httpd/html/rau-tu/nou-rau/MAIN/notice
+cp www/document/*.php /home/httpd/html/rau-tu/nou-rau/MAIN/document
+cp www/include/*.php /home/httpd/html/rau-tu/nou-rau/MAIN/include
+cp www/locale/pt_BR/LC_MESSAGES/nou-rau.mo /home/httpd/html/rau-tu/nou-rau/MAIN/locale/pt_BR/LC_MESSAGES

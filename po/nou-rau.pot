@@ -1,0 +1,1638 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2003-08-29 16:43-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../www/include/htdig.php:248
+msgid "$cfg_tool_htstat must be defined in the 'config_d.php' file"
+msgstr ""
+
+#: ../www/document/put.php:127
+msgid "-- choose one of these categories --"
+msgstr ""
+
+#: ../www/include/htdig.php:234
+msgid "1 document processed"
+msgstr ""
+
+#: ../www/include/htdig.php:236
+msgid "@1 documents processed"
+msgstr ""
+
+#: ../www/topic/action.php:24
+msgid "A non-empty topic cannot be removed"
+msgstr ""
+
+#: ../reset_nr.sql:68
+msgid "ASF Video"
+msgstr ""
+
+#: ../reset_nr.sql:67
+msgid "AVI Video"
+msgstr ""
+
+#: ../www/document/index.php:84
+msgid "Accept this document"
+msgstr ""
+
+#: ../www/document/search.php:29
+msgid "Access"
+msgstr ""
+
+#: ../www/document/action.php:19 ../www/document/action.php:38
+#: ../www/document/action.php:73 ../www/document/action.php:105
+#: ../www/document/edit.php:20 ../www/document/htdig.php:12
+#: ../www/document/index.php:59 ../www/document/index.php:193
+#: ../www/include/control.php:44 ../www/include/control.php:59
+#: ../www/include/control.php:62 ../www/topic/action.php:12
+#: ../www/user/action.php:13 ../www/user/change.php:16 ../www/user/edit.php:24
+#: ../www/user/edit.php:36 ../www/user/logout.php:12
+#: ../www/notice/post-notice.php:107
+msgid "Access denied"
+msgstr ""
+
+#: ../www/include/page_d.php:35
+msgid "Actions"
+msgstr ""
+
+#: ../www/document/index.php:135
+msgid "Additional information"
+msgstr ""
+
+#: ../www/document/edit.php:161
+msgid "Additional information (optional)"
+msgstr ""
+
+#: ../www/document/edit.php:165 ../www/document/index.php:147
+msgid "Address"
+msgstr ""
+
+#: ../reset.sql:15 ../www/user/index.php:24
+msgid "Administrator"
+msgstr ""
+
+#: ../www/include/format_d.php:105 ../www/include/format_d.php:122
+msgid "Advanced search"
+msgstr ""
+
+#: ../www/document/index.php:105 ../www/document/list.php:140
+msgid ""
+"All material on this system is the property and responsibility of its "
+"authors."
+msgstr ""
+
+#: ../reset_nr.sql:20
+msgid "Any 3D type: VRML"
+msgstr ""
+
+#: ../reset_nr.sql:38
+msgid "Any Application"
+msgstr ""
+
+#: ../reset_nr.sql:35
+msgid "Any Audio"
+msgstr ""
+
+#: ../reset_nr.sql:39
+msgid "Any Format"
+msgstr ""
+
+#: ../reset_nr.sql:34
+msgid "Any Image"
+msgstr ""
+
+#: ../reset_nr.sql:37
+msgid "Any Model"
+msgstr ""
+
+#: ../reset_nr.sql:33
+msgid "Any Text"
+msgstr ""
+
+#: ../reset_nr.sql:36
+msgid "Any Video"
+msgstr ""
+
+#: ../reset_nr.sql:21
+msgid "Any application type: PS, PDF, DOC, ZIP, ..."
+msgstr ""
+
+#: ../reset_nr.sql:18
+msgid "Any audio type: MIDI, MP3, WAV, ..."
+msgstr ""
+
+#: ../reset_nr.sql:22
+msgid "Any document type"
+msgstr ""
+
+#: ../reset_nr.sql:17
+msgid "Any image type: GIF, JPG, PNG, ..."
+msgstr ""
+
+#: ../reset_nr.sql:16
+msgid "Any simple text: ASCII, HTML, XML, ..."
+msgstr ""
+
+#: ../reset_nr.sql:19
+msgid "Any video type: MPEG, Quicktime, ..."
+msgstr ""
+
+#: ../reset_nr.sql:21
+msgid "Application"
+msgstr ""
+
+#: ../www/document/index.php:91
+msgid "Approve this document"
+msgstr ""
+
+#: ../www/document/index.php:51
+msgid "Approve:"
+msgstr ""
+
+#: ../www/document/list.php:137
+msgid "Archive a new document in this topic"
+msgstr ""
+
+#: ../www/document/edit.php:126 ../www/document/put.php:116
+msgid "Archive document into:"
+msgstr ""
+
+#: ../reset_nr.sql:18
+msgid "Audio"
+msgstr ""
+
+#: ../www/document/edit.php:147
+msgid "Author (or authors, separated by comma)"
+msgstr ""
+
+#: ../www/document/index.php:127
+msgid "Author(s)"
+msgstr ""
+
+#: ../reset_nr.sql:52
+msgid "BMP Image"
+msgstr ""
+
+#: ../www/include/page_d.php:37
+msgid "Browse"
+msgstr ""
+
+#: ../www/include/page_d.php:39
+msgid "Browse/Archive"
+msgstr ""
+
+#: ../www/document/list.php:29
+msgid "Browse/Archive:"
+msgstr ""
+
+#: ../www/document/index.php:55 ../www/document/list.php:31
+msgid "Browse:"
+msgstr ""
+
+#: ../www/user/list.php:13
+msgid "Browse: all users"
+msgstr ""
+
+#: ../www/document/put.php:140
+msgid ""
+"By submitting this file you agree that it will be made publically available "
+"for downloads."
+msgstr ""
+
+#: ../www/document/edit.php:30 ../www/document/edit.php:179
+#: ../www/topic/edit.php:25 ../www/topic/edit.php:146
+#: ../www/user/action.php:126 ../www/user/edit.php:30 ../www/user/edit.php:145
+msgid "Cancel"
+msgstr ""
+
+#: ../www/user/list.php:19
+msgid "Candidates"
+msgstr ""
+
+#: ../www/document/results.php:36 ../www/document/results.php:48
+msgid "Cannot complete search"
+msgstr ""
+
+#: ../www/topic/edit.php:131
+msgid "Categories"
+msgstr ""
+
+#: ../www/document/index.php:140 ../www/document/list.php:123
+#: ../www/document/put.php:134
+msgid "Category"
+msgstr ""
+
+#: ../www/include/util_d.php:24
+msgid "Category not found"
+msgstr ""
+
+#: ../www/include/util_d.php:18
+msgid "Category not specified"
+msgstr ""
+
+#: ../www/user/change.php:52 ../www/user/index.php:35
+msgid "Change password"
+msgstr ""
+
+#: ../www/document/htdig.php:17 ../www/document/htdig.php:29
+#: ../www/document/htdig.php:39 ../www/include/page.php:185
+#: ../www/include/page.php:202
+msgid "Click here to continue"
+msgstr ""
+
+#: ../www/document/edit.php:159 ../www/document/index.php:134
+#: ../www/document/search.php:28
+msgid "Code"
+msgstr ""
+
+#: ../www/user/index.php:28
+msgid "Collaborator"
+msgstr ""
+
+#: ../www/user/change.php:61
+msgid "Confirm the new password"
+msgstr ""
+
+#: ../www/user/edit.php:125
+msgid "Confirm the password"
+msgstr ""
+
+#: ../www/user/register.php:66
+msgid "Confirm your registration by following the link below:"
+msgstr ""
+
+#: ../www/user/change.php:28 ../www/user/edit.php:59
+msgid "Confirmation password does not match"
+msgstr ""
+
+#: ../www/include/page.php:145
+msgid "Contact us"
+msgstr ""
+
+#: ../www/document/list.php:45
+msgid "Create a new main topic"
+msgstr ""
+
+#: ../www/document/list.php:74
+msgid "Create a new subtopic"
+msgstr ""
+
+#: ../www/topic/edit.php:109
+msgid "Create a new topic"
+msgstr ""
+
+#: ../www/user/list.php:28
+msgid "Create a new user"
+msgstr ""
+
+#: ../www/document/index.php:148 ../www/include/format_t.php:48
+msgid "Created"
+msgstr ""
+
+#: ../www/user/change.php:57
+msgid "Current password"
+msgstr ""
+
+#: ../reset_nr.sql:78
+msgid "DVI Document"
+msgstr ""
+
+#: ../www/include/db.php:29
+msgid "Database connection failed:"
+msgstr ""
+
+#: ../www/document/index.php:133 ../www/topic/edit.php:122
+msgid "Description"
+msgstr ""
+
+#: ../www/document/edit.php:156
+msgid "Description (optional)"
+msgstr ""
+
+#: ../www/document/htdig.php:24
+msgid ""
+"Do you really want to rebuild the search index? This may take a long time..."
+msgstr ""
+
+#: ../www/user/action.php:26
+msgid "Do you want to approve the user with e-mail '@1'?"
+msgstr ""
+
+#: ../www/user/logout.php:16
+msgid "Do you want to leave the system?"
+msgstr ""
+
+#: ../www/document/action.php:78 ../www/document/action.php:106
+msgid "Do you want to reject the document with title '@1'?"
+msgstr ""
+
+#: ../www/user/action.php:94
+msgid "Do you want to reject the user with e-mail '@1'?"
+msgstr ""
+
+#: ../www/document/action.php:110 ../www/document/action.php:138
+msgid "Do you want to remove the document with title '@1'?"
+msgstr ""
+
+#: ../www/topic/action.php:29
+msgid "Do you want to remove the topic '@1'?"
+msgstr ""
+
+#: ../www/user/action.php:56
+msgid "Do you want to remove the user '@1'?"
+msgstr ""
+
+#: ../www/document/put.php:137
+msgid "Document"
+msgstr ""
+
+#: ../www/include/page.php:38
+msgid "Document Archival and Indexing System"
+msgstr ""
+
+#: ../www/document/action.php:32 ../www/document/action.php:64
+msgid "Document accepted"
+msgstr ""
+
+#: ../www/document/edit.php:129 ../www/document/edit.php:152
+msgid "Document accepted with format '@1'."
+msgstr ""
+
+#: ../www/document/action.php:67
+msgid "Document approved"
+msgstr ""
+
+#: ../www/document/index.php:38 ../www/document/index.php:161
+#: ../www/include/util_d.php:40
+msgid "Document not found"
+msgstr ""
+
+#: ../www/include/util_d.php:34
+msgid "Document not specified"
+msgstr ""
+
+#: ../www/document/action.php:29 ../www/document/edit.php:91
+#: ../www/document/edit.php:105
+msgid "Document received"
+msgstr ""
+
+#: ../www/document/action.php:94 ../www/document/action.php:97
+msgid "Document rejected"
+msgstr ""
+
+#: ../www/document/action.php:135 ../www/document/action.php:139
+msgid "Document removed"
+msgstr ""
+
+#: ../www/document/edit.php:84
+msgid "Document to be verified"
+msgstr ""
+
+#: ../www/document/edit.php:109
+msgid "Document updated"
+msgstr ""
+
+#: ../www/include/page.php:109
+msgid "Documents"
+msgstr ""
+
+#: ../www/document/manage.php:47
+msgid "Documents to remove"
+msgstr ""
+
+#: ../www/document/manage.php:46
+msgid "Documents to update"
+msgstr ""
+
+#: ../www/index.php:35
+msgid "Documents:"
+msgstr ""
+
+#: ../www/document/index.php:80 ../www/document/list.php:198
+msgid "Download"
+msgstr ""
+
+#: ../www/index.php:65 ../www/document/index.php:151
+#: ../www/document/stats.php:61
+msgid "Downloads"
+msgstr ""
+
+#: ../www/user/edit.php:135 ../www/user/register.php:91
+#: ../www/user/remind.php:62
+msgid "E-mail"
+msgstr ""
+
+#: ../www/document/edit.php:150
+msgid "E-mail (or e-mails, separated by comma) (optional)"
+msgstr ""
+
+#: ../www/user/remind.php:31
+msgid "E-mail not found"
+msgstr ""
+
+#: ../www/user/action.php:18 ../www/user/action.php:88
+msgid "E-mail not specified"
+msgstr ""
+
+#: ../www/document/index.php:130
+msgid "E-mail(s)"
+msgstr ""
+
+#: ../www/notice/publish.php:55
+msgid "Edit"
+msgstr ""
+
+#: ../www/document/index.php:98
+msgid "Edit document"
+msgstr ""
+
+#: ../www/document/edit.php:134
+msgid "Edit document of:"
+msgstr ""
+
+#: ../www/user/index.php:32
+msgid "Edit profile"
+msgstr ""
+
+#: ../www/document/list.php:60
+msgid "Edit topic"
+msgstr ""
+
+#: ../www/topic/edit.php:111
+msgid "Edit topic:"
+msgstr ""
+
+#: ../www/user/edit.php:114
+msgid "Edit user:"
+msgstr ""
+
+#: ../www/user/login.php:60
+msgid ""
+"Enter below your identification and password to log into the system. If you "
+"have forgotten your password, please follow the link on the bottom of this "
+"page."
+msgstr ""
+
+#: ../www/include/page.php:194
+msgid "Error"
+msgstr ""
+
+#: ../www/include/db.php:43 ../www/include/db.php:53 ../www/include/db.php:63
+msgid "Error message:"
+msgstr ""
+
+#: ../reset_nr.sql:76
+msgid "Excel Spreadsheet"
+msgstr ""
+
+#: ../www/document/edit.php:165 ../www/document/index.php:143
+msgid "File name"
+msgstr ""
+
+#: ../www/document/put.php:30
+msgid "File not found"
+msgstr ""
+
+#: ../www/document/put.php:53
+msgid "File type '@1' is not accepted in this category"
+msgstr ""
+
+#: ../reset_nr.sql:81
+msgid "Flash Document"
+msgstr ""
+
+#: ../www/document/index.php:141
+msgid "Format"
+msgstr ""
+
+#: ../www/include/util_d.php:56
+msgid "Format not found"
+msgstr ""
+
+#: ../www/include/util_d.php:50
+msgid "Format not specified"
+msgstr ""
+
+#: ../www/document/results.php:80
+msgid "Found <b>1</b> document containing @1"
+msgstr ""
+
+#: ../www/document/results.php:82
+msgid "Found <b>@1</b> documents containing @2"
+msgstr ""
+
+#: ../www/user/edit.php:133
+msgid "Full name"
+msgstr ""
+
+#: ../reset_nr.sql:47
+msgid "GIF Image"
+msgstr ""
+
+#: ../reset_nr.sql:22
+msgid "Generic"
+msgstr ""
+
+#: ../www/include/page.php:132
+msgid "Go back"
+msgstr ""
+
+#: ../reset_nr.sql:41
+msgid "HTML Text"
+msgstr ""
+
+#: ../www/include/format_t.php:25
+msgid "Home"
+msgstr ""
+
+#: ../www/user/login.php:64 ../www/user/remind.php:60
+msgid "Identification"
+msgstr ""
+
+#: ../www/user/edit.php:121
+msgid ""
+"Identification (use only letters and numbers, using '-', '_' or '.' as "
+"separation marks if needed)"
+msgstr ""
+
+#: ../www/user/remind.php:26
+msgid "Identification not found"
+msgstr ""
+
+#: ../reset_nr.sql:17
+msgid "Image"
+msgstr ""
+
+#: ../www/include/page.php:107
+msgid "Index"
+msgstr ""
+
+#: ../www/user/edit.php:18
+msgid "Invalid code"
+msgstr ""
+
+#: ../www/document/edit.php:54
+msgid "Invalid e-mail(s): please check"
+msgstr ""
+
+#: ../www/user/edit.php:67 ../www/user/register.php:31
+#: ../www/user/remind.php:20
+msgid "Invalid e-mail: please check"
+msgstr ""
+
+#: ../www/user/login.php:25 ../www/user/login.php:28
+msgid "Invalid identification or password"
+msgstr ""
+
+#: ../www/user/edit.php:51
+msgid "Invalid identification: only use the indicated characters"
+msgstr ""
+
+#: ../www/document/action.php:145 ../www/document/htdig.php:44
+#: ../www/topic/action.php:46 ../www/user/action.php:115
+msgid "Invalid operation"
+msgstr ""
+
+#: ../www/document/action.php:12 ../www/document/edit.php:16
+#: ../www/document/index.php:26 ../www/document/list.php:16
+#: ../www/document/put.php:14 ../www/topic/action.php:17
+#: ../www/topic/edit.php:14 ../www/user/action.php:50
+#: ../www/user/change.php:12 ../www/user/edit.php:13 ../www/user/index.php:15
+msgid "Invalid parameter"
+msgstr ""
+
+#: ../www/user/change.php:33
+msgid "Invalid password"
+msgstr ""
+
+#: ../reset_nr.sql:48
+msgid "JPEG Image"
+msgstr ""
+
+#: ../www/document/index.php:132
+msgid "Keywords"
+msgstr ""
+
+#: ../www/document/edit.php:153
+msgid "Keywords (separated by comma)"
+msgstr ""
+
+#: ../reset_nr.sql:79
+msgid "LaTeX Document"
+msgstr ""
+
+#: ../www/include/format_u.php:20
+msgid "Last access"
+msgstr ""
+
+#: ../www/document/stats.php:65
+msgid "Last update"
+msgstr ""
+
+#: ../www/include/format_u.php:19
+msgid "Level"
+msgstr ""
+
+#: ../www/user/login.php:57
+msgid "Login"
+msgstr ""
+
+#: ../reset_nr.sql:59
+msgid "MIDI Audio"
+msgstr ""
+
+#: ../reset_nr.sql:61
+msgid "MP3 Audio"
+msgstr ""
+
+#: ../reset_nr.sql:60
+msgid "MPEG Audio"
+msgstr ""
+
+#: ../reset_nr.sql:65
+msgid "MPEG Video"
+msgstr ""
+
+#: ../www/include/page.php:108 ../www/include/page.php:144
+msgid "Main page"
+msgstr ""
+
+#: ../www/index.php:56
+msgid "Main topics"
+msgstr ""
+
+#: ../www/include/format_t.php:47 ../www/topic/edit.php:124
+#: ../www/user/index.php:26
+msgid "Maintainer"
+msgstr ""
+
+#: ../www/topic/edit.php:48
+msgid "Maintainer not found"
+msgstr ""
+
+#: ../www/include/page_d.php:48
+msgid "Manage"
+msgstr ""
+
+#: ../www/document/manage.php:15
+msgid "Manage documents"
+msgstr ""
+
+#: ../www/include/format_d.php:80
+msgid "Matches per page"
+msgstr ""
+
+#: ../reset_nr.sql:20
+msgid "Model"
+msgstr ""
+
+#: ../www/index.php:62 ../www/document/stats.php:20
+#: ../www/document/stats.php:37
+msgid "Most accessed documents"
+msgstr ""
+
+#: ../www/document/stats.php:22 ../www/document/stats.php:45
+msgid "Most recent documents"
+msgstr ""
+
+#: ../www/document/stats.php:21 ../www/document/stats.php:41
+msgid "Most visited documents"
+msgstr ""
+
+#: ../www/user/action.php:134 ../www/user/register.php:95
+msgid "Motive for the registration"
+msgstr ""
+
+#: ../www/include/format_u.php:17 ../www/topic/edit.php:120
+msgid "Name"
+msgstr ""
+
+#: ../www/user/edit.php:112
+msgid "New collaborator registration"
+msgstr ""
+
+#: ../www/user/change.php:59
+msgid "New password"
+msgstr ""
+
+#: ../www/include/page.php:212 ../www/include/page.php:234
+#: ../www/user/action.php:42 ../www/user/action.php:125
+msgid "No"
+msgstr ""
+
+#: ../www/document/list.php:134
+msgid "No documents archived"
+msgstr ""
+
+#: ../www/document/results.php:57
+msgid "No documents found containing @1"
+msgstr ""
+
+#: ../www/include/format_d.php:101
+msgid "Normal search"
+msgstr ""
+
+#: ../www/notice/post-notice.php:79
+msgid "Notice"
+msgstr ""
+
+#: ../www/include/util_n.php:22 ../www/notice/post-notice.php:101
+msgid "Notice not found"
+msgstr ""
+
+#: ../www/include/util_n.php:16
+msgid "Notice not specified"
+msgstr ""
+
+#: ../www/notice/post-notice.php:48
+msgid "Notice posted"
+msgstr ""
+
+#: ../www/notice/post-notice.php:54
+msgid "Notice updated"
+msgstr ""
+
+#: ../www/index.php:41 ../www/notice/publish.php:18
+#: ../www/notice/publish.php:27
+msgid "Notices"
+msgstr ""
+
+#: ../www/document/stats.php:30
+msgid "Number of items"
+msgstr ""
+
+#: ../reset_nr.sql:80
+msgid "OGG Document"
+msgstr ""
+
+#: ../www/document/edit.php:173
+msgid ""
+"Observe that the archival of your document depends on the approval of this "
+"topic maintainer."
+msgstr ""
+
+#: ../www/include/format_d.php:79
+msgid "Ordering"
+msgstr ""
+
+#: ../www/document/index.php:138
+msgid "Owner"
+msgstr ""
+
+#: ../reset_nr.sql:73
+msgid "PDF Document"
+msgstr ""
+
+#: ../reset_nr.sql:49
+msgid "PNG Image"
+msgstr ""
+
+#: ../reset_nr.sql:53
+msgid "PSD Image"
+msgstr ""
+
+#: ../www/user/edit.php:123 ../www/user/login.php:66
+msgid "Password"
+msgstr ""
+
+#: ../www/user/change.php:40
+msgid "Password changed"
+msgstr ""
+
+#: ../www/user/remind.php:41
+msgid "Password reminder sent"
+msgstr ""
+
+#: ../www/include/format_u.php:21
+msgid "Personal information"
+msgstr ""
+
+#: ../www/user/edit.php:137
+msgid "Personal information (optional)"
+msgstr ""
+
+#: ../reset_nr.sql:42
+msgid "Plain Text"
+msgstr ""
+
+#: ../www/document/put.php:28
+msgid "Please choose a category"
+msgstr ""
+
+#: ../www/document/edit.php:130
+msgid "Please fill below all information regarding to the submitted file."
+msgstr ""
+
+#: ../www/user/change.php:24
+msgid "Please specify a new password and its confirmation"
+msgstr ""
+
+#: ../www/user/login.php:20
+msgid "Please specify a password"
+msgstr ""
+
+#: ../www/user/edit.php:55
+msgid "Please specify a password and its confirmation"
+msgstr ""
+
+#: ../www/user/edit.php:49 ../www/user/login.php:18
+msgid "Please specify an identification"
+msgstr ""
+
+#: ../www/user/remind.php:18
+msgid "Please specify either an identification or an e-mail"
+msgstr ""
+
+#: ../www/topic/edit.php:42
+msgid "Please specify the description"
+msgstr ""
+
+#: ../www/user/edit.php:65 ../www/user/register.php:29
+msgid "Please specify the e-mail address"
+msgstr ""
+
+#: ../www/user/edit.php:63
+msgid "Please specify the full name"
+msgstr ""
+
+#: ../www/document/edit.php:56
+msgid "Please specify the keywords"
+msgstr ""
+
+#: ../www/topic/edit.php:44
+msgid "Please specify the maintainer"
+msgstr ""
+
+#: ../www/user/register.php:34
+msgid "Please specify the motive for the registration"
+msgstr ""
+
+#: ../www/topic/edit.php:40
+msgid "Please specify the name"
+msgstr ""
+
+#: ../www/document/edit.php:52
+msgid "Please specify the name of the author(s)"
+msgstr ""
+
+#: ../www/document/edit.php:50
+msgid "Please specify the title"
+msgstr ""
+
+#: ../www/user/change.php:22
+msgid "Please specify your current password"
+msgstr ""
+
+#: ../reset_nr.sql:74
+msgid "PostScript Document"
+msgstr ""
+
+#: ../reset_nr.sql:77
+msgid "PowerPoint Presentation"
+msgstr ""
+
+#: ../www/include/page.php:146
+msgid "Print format"
+msgstr ""
+
+#: ../www/user/index.php:21
+msgid "Profile of @1"
+msgstr ""
+
+#: ../www/notice/post-notice.php:68
+msgid "Publish Notice"
+msgstr ""
+
+#: ../www/notice/publish.php:34
+msgid "Publish notice"
+msgstr ""
+
+#: ../www/include/db.php:42 ../www/include/db.php:52 ../www/include/db.php:62
+msgid "Query failed:"
+msgstr ""
+
+#: ../reset_nr.sql:66
+msgid "QuickTime Video"
+msgstr ""
+
+#: ../reset_nr.sql:75
+msgid "RTF Document"
+msgstr ""
+
+#: ../reset_nr.sql:62
+msgid "Real Audio"
+msgstr ""
+
+#: ../www/document/manage.php:52
+msgid "Rebuild search index"
+msgstr ""
+
+#: ../www/user/register.php:83
+msgid "Registration"
+msgstr ""
+
+#: ../www/user/action.php:37 ../www/user/register.php:66
+msgid "Registration confirmation"
+msgstr ""
+
+#: ../www/user/remind.php:37
+msgid "Registration data"
+msgstr ""
+
+#: ../www/user/action.php:21 ../www/user/action.php:90
+msgid "Registration not found"
+msgstr ""
+
+#: ../www/user/action.php:106
+msgid "Registration rejected"
+msgstr ""
+
+#: ../www/user/action.php:76
+msgid "Registration removed"
+msgstr ""
+
+#: ../www/user/register.php:55
+msgid "Registration request"
+msgstr ""
+
+#: ../www/user/register.php:44
+msgid "Registration request already made for this e-mail"
+msgstr ""
+
+#: ../www/document/index.php:86 ../www/document/index.php:93
+msgid "Reject this document"
+msgstr ""
+
+#: ../www/user/login.php:73
+msgid "Remind forgotten identification or password"
+msgstr ""
+
+#: ../www/user/remind.php:53
+msgid "Remind password"
+msgstr ""
+
+#: ../www/document/index.php:101
+msgid "Remove document"
+msgstr ""
+
+#: ../www/document/list.php:62
+msgid "Remove topic"
+msgstr ""
+
+#: ../www/document/action.php:47
+msgid "Rename failed"
+msgstr ""
+
+#: ../reset_nr.sql:43
+msgid "SGML Text"
+msgstr ""
+
+#: ../reset_nr.sql:50
+msgid "SVG Image"
+msgstr ""
+
+#: ../www/document/edit.php:178 ../www/topic/edit.php:145
+#: ../www/user/edit.php:144
+msgid "Save"
+msgstr ""
+
+#: ../www/include/format_d.php:98 ../www/include/format_d.php:121
+#: ../www/include/page_d.php:41
+msgid "Search"
+msgstr ""
+
+#: ../www/include/format_d.php:97 ../www/include/format_d.php:119
+msgid "Search for"
+msgstr ""
+
+#: ../www/document/manage.php:45
+msgid "Search index last updated"
+msgstr ""
+
+#: ../www/document/htdig.php:15
+msgid "Search index statistics"
+msgstr ""
+
+#: ../www/document/results.php:52
+msgid "Search results: all topics"
+msgstr ""
+
+#: ../www/document/search.php:13
+msgid "Search: all topics"
+msgstr ""
+
+#: ../www/document/put.php:121
+msgid "Select one of the available categories and specify the file to be sent."
+msgstr ""
+
+#: ../www/include/format_d.php:78
+msgid "Selection"
+msgstr ""
+
+#: ../www/document/edit.php:175 ../www/document/put.php:143
+#: ../www/topic/edit.php:143 ../www/user/change.php:63
+#: ../www/user/edit.php:142 ../www/user/login.php:69
+#: ../www/user/register.php:99 ../www/user/remind.php:65
+msgid "Send"
+msgstr ""
+
+#: ../www/document/stats.php:31
+msgid "Show"
+msgstr ""
+
+#: ../www/document/manage.php:54
+msgid "Show search index statistics"
+msgstr ""
+
+#: ../www/document/stats.php:18 ../www/include/page_d.php:42
+msgid "Show statistics"
+msgstr ""
+
+#: ../www/document/list.php:110
+msgid "Showing the documents <b>@1</b> - <b>@2</b>"
+msgstr ""
+
+#: ../www/document/results.php:83
+msgid "Showing the results <b>@1</b> - <b>@2</b>"
+msgstr ""
+
+#: ../www/document/index.php:144 ../www/document/list.php:122
+msgid "Size"
+msgstr ""
+
+#: ../www/include/page.php:232
+msgid "Specify the reason:"
+msgstr ""
+
+#: ../reset_nr.sql:84
+msgid "StarOffice Document"
+msgstr ""
+
+#: ../reset_nr.sql:82
+msgid "StarOffice Presentation"
+msgstr ""
+
+#: ../reset_nr.sql:83
+msgid "StarOffice Spreadsheet"
+msgstr ""
+
+#: ../www/notice/post-notice.php:77
+msgid "Subject"
+msgstr ""
+
+#: ../www/document/list.php:72
+msgid "Subtopics"
+msgstr ""
+
+#: ../reset_nr.sql:58
+msgid "Sun/NeXT Audio"
+msgstr ""
+
+#: ../reset_nr.sql:85
+msgid "TAR Archive"
+msgstr ""
+
+#: ../reset_nr.sql:51
+msgid "TIFF Image"
+msgstr ""
+
+#: ../reset_nr.sql:86
+msgid "TeX Document"
+msgstr ""
+
+#: ../reset_nr.sql:16
+msgid "Text"
+msgstr ""
+
+#: ../www/document/edit.php:75
+msgid "The address is needed; please check the default value given"
+msgstr ""
+
+#: ../www/document/edit.php:84 ../www/document/edit.php:86
+msgid "The document '@1' in the directory '@2' needs verification."
+msgstr ""
+
+#: ../www/document/edit.php:64
+msgid "The document code is needed; please check the default value given"
+msgstr ""
+
+#: ../www/document/action.php:90 ../www/document/action.php:118
+msgid ""
+"The document sent to the topic '@1' with title '@2' was rejected by the "
+"maintainer."
+msgstr ""
+
+#: ../www/document/action.php:64 ../www/document/action.php:57
+#: ../www/document/action.php:92
+msgid "The document with title '@1' has been accepted in the topic '@2'."
+msgstr ""
+
+#: ../www/document/action.php:29 ../www/document/edit.php:91
+#: ../www/document/action.php:30 ../www/document/edit.php:94
+msgid "The document with title '@1' was received on the topic '@2'."
+msgstr ""
+
+#: ../www/document/action.php:131 ../www/document/action.php:159
+msgid "The document with title '@1' was removed from the topic '@2'."
+msgstr ""
+
+#: ../www/document/edit.php:73
+msgid "The file name is needed; please check the default value given"
+msgstr ""
+
+#: ../www/document/put.php:35
+msgid "The file size (@1 bytes) exceeded the maximum permitted"
+msgstr ""
+
+#: ../www/document/results.php:65
+msgid "The logical expression @1 has a syntax error"
+msgstr ""
+
+#: ../www/document/action.php:92 ../www/document/action.php:133
+#: ../www/user/action.php:75 ../www/user/action.php:105
+msgid "The reason given was:"
+msgstr ""
+
+#: ../www/document/edit.php:70
+msgid ""
+"The size of the additional information exceeded the maximum allowed in @1 "
+"characters"
+msgstr ""
+
+#: ../www/document/edit.php:62
+msgid ""
+"The size of the description exceeded the maximum allowed in @1 characters"
+msgstr ""
+
+#: ../www/user/edit.php:70
+msgid ""
+"The size of the information exceeded the maximum allowed in @1 characters"
+msgstr ""
+
+#: ../www/document/edit.php:59
+msgid "The size of the keywords exceeded the maximum allowed in @1 characters"
+msgstr ""
+
+#: ../www/user/register.php:37
+msgid "The size of the motive exceeded the maximum allowed in @1 characters"
+msgstr ""
+
+#: ../www/user/register.php:55
+msgid "The user with e-mail '@1' requested to be registered."
+msgstr ""
+
+#: ../www/document/list.php:109
+msgid "There are <b>@1</b> documents available"
+msgstr ""
+
+#: ../www/document/manage.php:38
+msgid "There are no pending documents"
+msgstr ""
+
+#: ../www/document/list.php:41
+msgid "There are no topics available"
+msgstr ""
+
+#: ../www/document/list.php:103
+msgid "There is <b>1</b> document available"
+msgstr ""
+
+#: ../www/user/edit.php:53
+msgid "There is already a collaborator with the same identification"
+msgstr ""
+
+#: ../www/document/edit.php:67
+msgid "There is already another document with the same code"
+msgstr ""
+
+#: ../www/user/register.php:46
+msgid "This e-mail is already in use by a collaborator"
+msgstr ""
+
+#: ../www/document/put.php:148
+msgid "This topic does not accept document submissions"
+msgstr ""
+
+#: ../www/document/edit.php:145 ../www/document/index.php:126
+#: ../www/document/list.php:121
+msgid "Title"
+msgstr ""
+
+#: ../www/document/search.php:24
+msgid "To access a document given its code, just indicate it below:"
+msgstr ""
+
+#: ../www/document/manage.php:33
+msgid "To approve"
+msgstr ""
+
+#: ../www/document/search.php:16
+msgid ""
+"To find documents containing one or more words, fill the following field:"
+msgstr ""
+
+#: ../www/document/search.php:18
+msgid ""
+"To find documents containing one or more words, fill the following fields:"
+msgstr ""
+
+#: ../www/document/manage.php:22
+msgid "To verify"
+msgstr ""
+
+#: ../www/topic/edit.php:68
+msgid "Topic created"
+msgstr ""
+
+#: ../www/include/util_t.php:22
+msgid "Topic not found"
+msgstr ""
+
+#: ../www/include/util_t.php:16
+msgid "Topic not specified"
+msgstr ""
+
+#: ../www/topic/action.php:39
+msgid "Topic removed"
+msgstr ""
+
+#: ../www/topic/edit.php:95
+msgid "Topic updated"
+msgstr ""
+
+#: ../www/index.php:59 ../www/document/list.php:39
+msgid "Topics"
+msgstr ""
+
+#: ../www/index.php:37
+msgid "Total size:"
+msgstr ""
+
+#: ../www/index.php:32
+msgid "Totals"
+msgstr ""
+
+#: ../www/document/stats.php:29
+msgid "Type"
+msgstr ""
+
+#: ../www/document/manage.php:50
+msgid "Update search index"
+msgstr ""
+
+#: ../www/document/index.php:149 ../www/document/list.php:124
+msgid "Updated"
+msgstr ""
+
+#: ../www/document/htdig.php:27 ../www/document/htdig.php:37
+msgid "Updating search index"
+msgstr ""
+
+#: ../www/user/action.php:40
+msgid "User approved"
+msgstr ""
+
+#: ../www/user/edit.php:79
+msgid "User created"
+msgstr ""
+
+#: ../www/include/util_u.php:22
+msgid "User not found"
+msgstr ""
+
+#: ../www/include/util_u.php:16
+msgid "User not specified"
+msgstr ""
+
+#: ../www/user/edit.php:97
+msgid "User profile updated"
+msgstr ""
+
+#: ../www/user/action.php:109
+msgid "User rejected"
+msgstr ""
+
+#: ../www/user/action.php:80
+msgid "User removed"
+msgstr ""
+
+#: ../www/include/page.php:112 ../www/user/list.php:25
+msgid "Users"
+msgstr ""
+
+#: ../reset_nr.sql:70
+msgid "VRML Model"
+msgstr ""
+
+#: ../www/document/index.php:46
+msgid "Verify:"
+msgstr ""
+
+#: ../reset_nr.sql:19
+msgid "Video"
+msgstr ""
+
+#: ../www/document/index.php:78 ../www/document/list.php:197
+msgid "View"
+msgstr ""
+
+#: ../www/document/index.php:150 ../www/document/stats.php:63
+msgid "Visits"
+msgstr ""
+
+#: ../reset_nr.sql:63
+msgid "WAV Audio"
+msgstr ""
+
+#: ../reset_nr.sql:44
+msgid "WML Text"
+msgstr ""
+
+#: ../www/user/register.php:69
+msgid ""
+"Wait for an e-mail with instructions on how to proceed with your registration"
+msgstr ""
+
+#: ../www/include/start.php:37 ../www/include/start.php:29
+msgid "We are offline for maintenance, we'll be back soon"
+msgstr ""
+
+#: ../reset_nr.sql:72
+msgid "Word Document"
+msgstr ""
+
+#: ../reset_nr.sql:87
+msgid "WordPerfect Document"
+msgstr ""
+
+#: ../reset_nr.sql:54
+msgid "XBM Image"
+msgstr ""
+
+#: ../reset_nr.sql:55
+msgid "XCF Image"
+msgstr ""
+
+#: ../reset_nr.sql:45
+msgid "XML Text"
+msgstr ""
+
+#: ../reset_nr.sql:56
+msgid "XPM Image"
+msgstr ""
+
+#: ../www/document/action.php:81 ../www/document/action.php:113
+#: ../www/document/htdig.php:26 ../www/include/page.php:211
+#: ../www/include/page.php:233 ../www/topic/action.php:33
+#: ../www/user/action.php:29 ../www/user/action.php:60
+#: ../www/user/action.php:97 ../www/user/action.php:124
+#: ../www/user/logout.php:17
+msgid "Yes"
+msgstr ""
+
+#: ../www/user/remind.php:37
+msgid "You are registered as '@1' with password '@2'."
+msgstr ""
+
+#: ../www/user/edit.php:87
+msgid "You have been successfully registered"
+msgstr ""
+
+#: ../www/user/remind.php:56
+msgid ""
+"You only have to fill one of the fields below. After sending this request "
+"you will receive an e-mail with your identification and password."
+msgstr ""
+
+#: ../www/user/register.php:86
+msgid ""
+"You only need to register as a user if you plan to upload documents to the "
+"system. You can already browse and search documents, just go to the "
+"'Documents' section in the index box on the left."
+msgstr ""
+
+#: ../www/user/action.php:37
+msgid ""
+"Your registration was approved.\n"
+"Confirm your registration by following the link below:"
+msgstr ""
+
+#: ../www/user/action.php:103
+msgid "Your registration was rejected by the administrator."
+msgstr ""
+
+#: ../www/user/action.php:73
+msgid "Your registration was removed by the administrator."
+msgstr ""
+
+#: ../www/user/register.php:58
+msgid ""
+"Your request will be evaluated; please wait for an e-mail with the results"
+msgstr ""
+
+#: ../reset_nr.sql:88
+msgid "ZIP Archive"
+msgstr ""
+
+#: ../www/include/htdig.php:248
+msgid "\\$cfg_tool_htstat must be defined in the 'config_d.php' file"
+msgstr ""
+
+#: ../www/include/page.php:53
+msgid "about"
+msgstr ""
+
+#: ../www/document/stats.php:26 ../www/include/format_d.php:77
+msgid "all"
+msgstr ""
+
+#: ../www/document/list.php:23
+msgid "all main topics"
+msgstr ""
+
+#: ../www/include/format_d.php:65
+msgid "all words"
+msgstr ""
+
+#: ../www/include/format_d.php:66
+msgid "any words"
+msgstr ""
+
+#: ../www/user/list.php:49
+msgid "approve/reject"
+msgstr ""
+
+#: ../www/include/util.php:61
+msgid "at"
+msgstr ""
+
+#: ../www/include/htdig.php:40
+msgid "cleaning..."
+msgstr ""
+
+#: ../www/include/htdig.php:250
+msgid "collecting..."
+msgstr ""
+
+#: ../www/include/htdig.php:57
+msgid "converting..."
+msgstr ""
+
+#: ../www/document/list.php:157
+msgid "doc:"
+msgstr ""
+
+#: ../www/include/htdig.php:232 ../www/include/htdig.php:261
+msgid "finished!"
+msgstr ""
+
+#: ../www/include/page.php:55
+msgid "help"
+msgstr ""
+
+#: ../www/include/htdig.php:27
+msgid "ht://Dig already running"
+msgstr ""
+
+#: ../www/document/manage.php:73
+msgid "in"
+msgstr ""
+
+#: ../www/include/htdig.php:128
+msgid "indexing..."
+msgstr ""
+
+#: ../www/include/htdig.php:190
+msgid "installing..."
+msgstr ""
+
+#: ../www/include/page.php:42
+msgid "logged as <b>@1</b>"
+msgstr ""
+
+#: ../www/include/format_d.php:67
+msgid "logical expression"
+msgstr ""
+
+#: ../www/include/page.php:49
+msgid "login"
+msgstr ""
+
+#: ../www/include/page.php:45
+msgid "logout"
+msgstr ""
+
+#: ../www/document/put.php:131
+msgid "maximum"
+msgstr ""
+
+#: ../www/include/html.php:164
+msgid "maximum size of @1 characters"
+msgstr ""
+
+#: ../www/include/format_d.php:28 ../www/notice/publish.php:71
+#: ../www/notice/publish.php:74
+msgid "next"
+msgstr ""
+
+#: ../www/include/format_d.php:27 ../www/notice/publish.php:66
+#: ../www/notice/publish.php:69
+msgid "previous"
+msgstr ""
+
+#: ../www/include/page.php:43
+msgid "profile"
+msgstr ""
+
+#: ../www/include/format_n.php:27
+msgid "published by @1 at @2"
+msgstr ""
+
+#: ../www/include/page.php:51
+msgid "register"
+msgstr ""
+
+#: ../www/user/list.php:74
+msgid "remove"
+msgstr ""
+
+#: ../www/include/htdig.php:164
+msgid "removing..."
+msgstr ""
+
+#: ../www/include/format_d.php:71
+msgid "reverse score"
+msgstr ""
+
+#: ../www/include/format_d.php:73
+msgid "reverse time"
+msgstr ""
+
+#: ../www/include/format_d.php:72
+msgid "reverse title"
+msgstr ""
+
+#: ../www/include/format_d.php:68
+msgid "score"
+msgstr ""
+
+#: ../www/index.php:88
+msgid "see more"
+msgstr ""
+
+#: ../www/include/page.php:245
+msgid "send notification"
+msgstr ""
+
+#: ../www/include/format_d.php:70
+msgid "time"
+msgstr ""
+
+#: ../www/include/format_d.php:69
+msgid "title"
+msgstr ""
+
+#: ../www/include/htdig.php:206
+msgid "updating..."
+msgstr ""
+
+#: ../www/include/page.php:56
+msgid "version"
+msgstr ""
+
+#: ../www/document/index.php:105
+msgid "Change document"
+msgstr ""
+
+#: ../www/document/index.php:111
+msgid "Accept new document"
+msgstr ""
+
+#: ../www/document/index.php:116
+msgid "Reject new document"
+msgstr ""
+
+#: ../www/document/index.php:150
+msgid "New document"
+msgstr ""
+
+#: ../www/document/index.php:164
+msgid "Time estimated for download"
+msgstr ""
+
+#: ../www/document/index.php:164
+msgid "minute(s) (56 kb/s connection speed)"
+msgstr ""
+

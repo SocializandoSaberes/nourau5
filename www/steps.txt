@@ -1,0 +1,13 @@
+(1)
+locale-gen en_US en_US.UTF-8 pt_BR pt_BR.utf8
+dpkg-reconfigure locales
+
+(2)
+No htdig.conf (/etc/htdig/htdig.conf)
+database_dir:           /var/lib/htdig
+Colocar o diretório correto (/home/rafael/nourau/htdig)
+
+(3)
+
+
+

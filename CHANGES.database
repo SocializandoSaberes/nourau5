@@ -1,0 +1,10 @@
+Changes in Nou-Rau 1.0 from previous release:
+
+* Updated Nou-Rau schema from 1.0.1 to 1.0.2:
+
+  ALTER TABLE nr_document add column new_filename VARCHAR(150);
+  ALTER TABLE nr_document add column new_size INT;
+  ALTER TABLE nr_document add column new_format_id INT;
+
+  DELETE FROM nr_version;
+  INSERT INTO nr_version (schema) VALUES ('1.0.2');
